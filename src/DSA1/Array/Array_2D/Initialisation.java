@@ -8,17 +8,11 @@ public class Initialisation {
                 {50,60,70,80},
                 {90,100,110,120},
                 {130,140,150,160}};
-        System.out.println("The Wave-Matrix is :");
-        for (int i=0;i<4;i++){
-            if(i%2==0){
-                for (int j=0;j<4;j++){
-                    System.out.print(arr[i][j]+" ");
-                }
+        System.out.println("yhe matrix is : ");
+        for(int row=0;row< arr.length;row++){
+            for(int col=0;col<arr[row].length;col++){
+                System.out.print(arr[row][col]+" ");
             }
-            else
-                for (int j=3;j>=0;j--){
-                    System.out.print(arr[i][j]+" ");
-                }
             System.out.println();
         }
     }

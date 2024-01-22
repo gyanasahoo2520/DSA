@@ -1,5 +1,6 @@
 package DSA1.Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array1 {
@@ -14,9 +15,11 @@ public class Array1 {
             arr[i]=sc.nextInt();
         }
 //        System.out.println(arr[4]);
-        for (int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
-        }
+//        for (int i=0;i<n;i++){
+//            System.out.print(arr[i]+" ");
+//        }
+        // Another way of printing the element of array is - Arrays.toString(array_name);
+        System.out.println(Arrays.toString(arr));
         System.out.println();
         // for reading the elements in the array we use a shortcut :
         //i.e. for-each loop
@@ -24,5 +27,6 @@ public class Array1 {
         for(int num:a){
             System.out.print(num + " ");
         }
+
     }
 }
