@@ -17,5 +17,12 @@ public class Array1 {
         for (int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
         }
+        System.out.println();
+        // for reading the elements in the array we use a shortcut :
+        //i.e. for-each loop
+        int[] a={1,2,3,4,5};
+        for(int num:a){
+            System.out.print(num + " ");
+        }
     }
 }
