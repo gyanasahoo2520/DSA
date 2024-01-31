@@ -1,5 +1,5 @@
 package DSA1.Array;
-//Given N array element ,count total no. of elements having atleast 1 element greater
+//Given N array element ,count total no. of elements having at-least 1 element greater
 import java.util.Scanner;
 
 public class Array7_Greatercount {
@@ -14,15 +14,15 @@ public class Array7_Greatercount {
         }
         System.out.println("Number of element smaller : "+ Countgreater(arr));
     }
-    public static int Countgreater(int arr[]){
+    public static int Countgreater(int[] arr){
         int max=arr[0];
         for (int i=1;i< arr.length;i++){
             if (arr[i]>max)
                 max=arr[i];
         }
         int count=0;
-        for (int i=0;i<arr.length;i++){
-            if (arr[i]==max)
+        for (int j : arr) {
+            if (j == max)
                 count++;
         }
         return arr.length-count;

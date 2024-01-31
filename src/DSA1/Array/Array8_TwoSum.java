@@ -20,7 +20,7 @@ public class Array8_TwoSum {
         else
             System.out.println("Not Present");
     }
-    public static boolean Twosum(int arr[],int sum){
+    public static boolean Twosum(int[] arr,int sum){
         int n=arr.length;
         for (int i=0;i<n-1;i++){
             for (int j=i+1;j<n;j++){
