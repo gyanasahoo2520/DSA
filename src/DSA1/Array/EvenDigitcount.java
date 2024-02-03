@@ -3,8 +3,8 @@ package DSA1.Array;
 
 public class EvenDigitcount {
     public static void main(String[] args) {
-        int arr[]={12,345,2,6,7896};
-//        System.out.println(findNums(arr));
+        int[] arr={12,345,2,6,7896};
+        System.out.println(findNums(arr));
         System.out.println(countDigit2(2345676));
     }
 
@@ -20,10 +20,7 @@ public class EvenDigitcount {
 
     static boolean even(int n) {
         int numberOfDigit=countDigit(n);
-        if(numberOfDigit%2==0){
-            return true;
-        }
-        return false;
+        return numberOfDigit % 2 == 0;
     }
 
     static int countDigit(int n) {
