@@ -14,12 +14,12 @@ public class LongestSubarray {
         int maxLen=0;
         int sum=arr[0];
         while(r<n){
-            if(sum==k){
-                maxLen=Math.max(maxLen,r-l+1);
-            }
             if(l<=r && sum>k){
                 sum=sum-arr[l];
                 l++;
+            }
+            if(sum==k){
+                maxLen=Math.max(maxLen,r-l+1);
             }
             r++;
             if(r<n)
