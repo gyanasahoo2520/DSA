@@ -11,11 +11,16 @@ public class Intro {
         stack.push(40);
         stack.push(50);
 
+        System.out.println(stack);
+
+        System.out.println("Size is : " +stack.size());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
+
+        System.out.println(stack.isEmpty());
     }
 
 }
