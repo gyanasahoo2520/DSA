@@ -13,17 +13,22 @@ public class IntroQueue {
         queue.add(30);
         queue.add(40);
         queue.add(50);
+        System.out.println(queue.remove());;
+        System.out.println(queue.poll());
 
         System.out.println(queue.peek());
-        System.out.println(queue.remove());
+        System.out.println(queue.element());
 
-        Deque<Integer> dq=new ArrayDeque<>();
-        dq.add(10);
-        dq.add(20);
-        dq.addFirst(30);
-        dq.addFirst(40);
-
-        System.out.println(dq.removeFirst());
-        System.out.println(dq.removeLast());
+//        System.out.println(queue.peek());
+        queue.remove();
+        System.out.println(queue);
+//        Deque<Integer> dq=new ArrayDeque<>();
+//        dq.add(10);
+//        dq.add(20);
+//        dq.addFirst(30);
+//        dq.addFirst(40);
+//
+//        System.out.println(dq.removeFirst());
+//        System.out.println(dq.removeLast());
     }
 }
