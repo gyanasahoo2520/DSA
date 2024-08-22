@@ -70,6 +70,7 @@ public class LLImplementationQueue {
         System.out.println(q1.remove());
         q1.remove();
         q1.display();
+
     }
 
 }
