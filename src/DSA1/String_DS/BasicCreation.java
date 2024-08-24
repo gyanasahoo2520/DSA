@@ -1,4 +1,4 @@
-package DSA1.String;
+package DSA1.String_DS;
 
 public class BasicCreation {
     public static void main(String[] args) {

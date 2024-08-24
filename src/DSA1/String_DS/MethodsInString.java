@@ -1,4 +1,4 @@
-package DSA1.String;
+package DSA1.String_DS;
 
 import java.util.Arrays;
 
