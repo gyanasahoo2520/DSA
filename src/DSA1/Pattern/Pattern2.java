@@ -4,8 +4,8 @@ public class Pattern2 {
     public static void main(String[] args) {
 //        pattern1(5);
 //        pattern2(5);
-//        pattern3(4);
-        pattern4(4);
+        pattern3(4);
+//        pattern4(4);
     }
     static void pattern1(int n){
         for(int row=1;row<=n;row++){

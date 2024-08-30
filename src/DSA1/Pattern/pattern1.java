@@ -70,7 +70,8 @@ public class pattern1 {
     }
     static void Pattern4(int n){
         for(int row=0;row<2*n;row++){
-            int totalCol=row>n?2*n-row:row;
+//            int totalCol=row>n?2*n-row:row;
+            int totalCol=row>n?n-row%n:row;
             for(int col=0;col<totalCol;col++){
                 System.out.print("* ");
             }
