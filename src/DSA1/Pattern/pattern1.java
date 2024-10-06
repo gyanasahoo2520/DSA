@@ -6,45 +6,25 @@ package DSA1.Pattern;
         * * * *
         * * * * *
 */
-/*   pattern2
-         * * * * *
-         * * * *
-         * * *
-         * *
-         *
- */
-/*   pattern3
-          1
-          1 2
-          1 2 3
-          1 2 3 4
-          1 2 3 4 5
 
- *//*   pattern4
-         *
-         * *
-         * * *
-         * * * *
-         * * * * *
-         * * * *
-         * * *
-         * *
-         *
+/* pattern 6
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
  */
-/*   pattern5
-    Diamond
- */
-
 
 public class pattern1 {
     public static void main(String[] args) {
-//        Pattern1(5);
-//        Pattern2(5);
-//        Pattern3(5);
-//        Pattern4(5);
-        Pattern5(5);
+//        pattern1(5);
+//        pattern2(5);
+//        pattern3(5);
+//        pattern4(5);
+//        pattern5(5);
+        pattern6(5);
     }
-    static void Pattern1(int n){
+    static void pattern1(int n){
         for(int row=1;row<=n;row++){
             for(int col=1;col<=row;col++){
                 System.out.print("* ");
@@ -52,7 +32,17 @@ public class pattern1 {
             System.out.println();
         }
     }
-    static void Pattern2(int n){
+
+/*   pattern2
+     * * * * *
+     * * * *
+     * * *
+     * *
+     *
+
+*/
+
+    static void pattern2(int n){
         for(int row=1;row<=n;row++){
             for(int col=1;col<=n-row+1;col++){
                 System.out.print("* ");
@@ -60,7 +50,16 @@ public class pattern1 {
             System.out.println();
         }
     }
-    static void Pattern3(int n){
+
+/*   pattern3
+              1
+              1 2
+              1 2 3
+              1 2 3 4
+              1 2 3 4 5
+
+*/
+    static void pattern3(int n){
         for(int row=1;row<=n;row++){
             for(int col=1;col<=row;col++){
                 System.out.print(col + " ");
@@ -68,7 +67,18 @@ public class pattern1 {
             System.out.println();
         }
     }
-    static void Pattern4(int n){
+/*   pattern4
+     *
+     * *
+     * * *
+     * * * *
+     * * * * *
+     * * * *
+     * * *
+     * *
+     *
+*/
+    static void pattern4(int n){
         for(int row=0;row<2*n;row++){
 //            int totalCol=row>n?2*n-row:row;
             int totalCol=row>n?n-row%n:row;
@@ -78,7 +88,12 @@ public class pattern1 {
             System.out.println();
         }
     }
-    static void Pattern5(int n){
+/*   pattern5
+    Diamond
+
+ */
+
+    static void pattern5(int n){
         for(int row=0;row<2*n;row++){
             int totalCol=row>n?2*n-row:row;
             int noOfspace=n-totalCol;
@@ -89,6 +104,17 @@ public class pattern1 {
                 System.out.print("* ");
             }
             System.out.println();
+        }
+    }
+    static void pattern6(int n) {
+        for (int row = 1; row <=n ; row++) {
+
+            for (int col = 1; col <=n ; col++) {
+                System.out.print("* ");
+
+            }
+            System.out.println();
+
         }
     }
 }
