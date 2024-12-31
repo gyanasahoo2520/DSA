@@ -7,22 +7,16 @@ package DSA1.Pattern;
         * * * * *
 */
 
-/* pattern 6
-* * * * *
-* * * * *
-* * * * *
-* * * * *
-* * * * *
- */
 
-public class pattern1 {
+public class Pattern1 {
     public static void main(String[] args) {
 //        pattern1(5);
 //        pattern2(5);
 //        pattern3(5);
 //        pattern4(5);
-//        pattern5(5);
-        pattern6(5);
+        pattern5(5);
+//        pattern6(5);
+
     }
     static void pattern1(int n){
         for(int row=1;row<=n;row++){
@@ -79,7 +73,8 @@ public class pattern1 {
      *
 */
     static void pattern4(int n){
-        for(int row=0;row<2*n;row++){
+        int totalRow=2*n-1;
+        for(int row=1;row<=totalRow;row++){
 //            int totalCol=row>n?2*n-row:row;
             int totalCol=row>n?n-row%n:row;
             for(int col=0;col<totalCol;col++){
@@ -94,8 +89,9 @@ public class pattern1 {
  */
 
     static void pattern5(int n){
-        for(int row=0;row<2*n;row++){
-            int totalCol=row>n?2*n-row:row;
+        int totalRow=2*n-1;
+        for(int row=1;row<=totalRow;row++){
+            int totalCol=row>n?totalRow-row+1:row;
             int noOfspace=n-totalCol;
             for(int s=0;s<noOfspace;s++) {
                 System.out.print(" ");
@@ -106,6 +102,14 @@ public class pattern1 {
             System.out.println();
         }
     }
+
+/* pattern 6
+     * * * * *
+     * * * * *
+     * * * * *
+     * * * * *
+     * * * * *
+*/
     static void pattern6(int n) {
         for (int row = 1; row <=n ; row++) {
 
