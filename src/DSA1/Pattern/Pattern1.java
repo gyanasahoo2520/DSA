@@ -1,12 +1,4 @@
 package DSA1.Pattern;
-/* pattern1
-        *
-        * *
-        * * *
-        * * * *
-        * * * * *
-*/
-
 
 public class Pattern1 {
     public static void main(String[] args) {
@@ -14,10 +6,21 @@ public class Pattern1 {
 //        pattern2(5);
 //        pattern3(5);
 //        pattern4(5);
-        pattern5(5);
+//        pattern5(5);
 //        pattern6(5);
+//        pattern7(5,5);
+        pattern8(5);
 
     }
+
+/* pattern1
+     *
+     * *
+     * * *
+     * * * *
+     * * * * *
+*/
+
     static void pattern1(int n){
         for(int row=1;row<=n;row++){
             for(int col=1;col<=row;col++){
@@ -121,4 +124,47 @@ public class Pattern1 {
 
         }
     }
+
+/*    pattern 7
+            * * * * *
+            *       *
+            *       *
+            *       *
+            * * * * *
+
+ */
+
+    static void pattern7(int row, int col){
+        for(int i=1;i<=row;i++){
+            for(int j=1;j<=col;j++){
+                if((i==1 || j==1) || (i==row || j==col)){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+ /* pattern 8 - Rhombus
+     *****
+      *****
+       *****
+        *****
+         *****
+*/
+
+    static void pattern8(int n){
+        for(int i=0;i<n;i++){
+            for(int a=1;a<=i;a++)
+                System.out.print(" ");
+            for(int j=0;j<n;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }
+
+
