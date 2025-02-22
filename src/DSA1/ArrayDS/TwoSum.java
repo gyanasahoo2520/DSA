@@ -8,6 +8,7 @@ public class TwoSum {
         int target=14;
         System.out.println(isPresent(arr,target));
     }
+
     static String isPresent(int[] a,int k){
         int l=0,r=a.length-1;
         Arrays.sort(a);
